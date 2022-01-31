@@ -17,7 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gP3-SW-cBQ">
-                                <rect key="frame" x="111" y="429" width="192" height="48"/>
+                                <rect key="frame" x="111" y="94" width="192" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNKNOWN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxl-JW-2a9">
+                                <rect key="frame" x="111" y="764" width="192" height="48"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,11 +32,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gP3-SW-cBQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZEi-Az-2GM"/>
-                            <constraint firstItem="gP3-SW-cBQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c2s-ZY-zdK"/>
+                            <constraint firstItem="gP3-SW-cBQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="1Tc-dd-FNN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rxl-JW-2a9" secondAttribute="bottom" constant="50" id="DYY-7v-MPw"/>
+                            <constraint firstItem="gP3-SW-cBQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XME-HN-L0s"/>
+                            <constraint firstItem="Rxl-JW-2a9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="a8A-VD-2bc"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="beaconNameLabel" destination="Rxl-JW-2a9" id="rAi-X9-MkX"/>
                         <outlet property="distanceReading" destination="gP3-SW-cBQ" id="M8V-iT-dHt"/>
                     </connections>
                 </viewController>
